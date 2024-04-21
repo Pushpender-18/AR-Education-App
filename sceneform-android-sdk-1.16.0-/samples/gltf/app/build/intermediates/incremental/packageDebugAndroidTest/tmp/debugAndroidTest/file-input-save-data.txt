@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Thu Apr 11 06:21:32 IST 2024
+0.base=/home/pushpender/Downloads/sceneform-android-sdk-1.16.0/sceneform-android-sdk-1.16.0-/samples/gltf/app/build/intermediates/transforms/dexMerger/androidTest/debug/0
+0.path=classes.dex
+count=1
+0.baseType=DIRECTORY
+0.set=DEX

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright 2018 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.google.ar.sceneform.samples.gltf">
+    <!-- "AR Required" apps must declare minSdkVersion ≥ 24.
+         "AR Optional" apps must declare minSdkVersion ≥ 14 -->
+    <!-- Always needed for AR. -->
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Needed to load gltf from network. -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Sceneform requires OpenGLES 3.0 or later. -->
+    <uses-feature android:glEsVersion="0x00030000" android:required="true" />
+    <!-- Indicates that this app requires Google Play Services for AR ("AR Required") and results in
+         the app only being visible in the Google Play Store on devices that support ARCore.
+         For an "AR Optional" app, remove this tag. -->
+    <uses-feature android:name="android.hardware.camera.ar" android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="false"
+        tools:ignore="GoogleAppIndexingWarning">
+        <!-- Indicates that this app requires Google Play Services for AR ("AR Required") and causes
+             the Google Play Store to download and intall Google Play Services for AR along with
+             the app. For an "AR Optional" app, specify "optional" instead of "required". -->
+        <meta-data android:name="com.google.ar.core" android:value="required" />
+
+        <activity
+            android:name=".LearnPage"
+            android:label="ARE"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+            android:screenOrientation="locked"
+
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Class1"
+            android:label="Class 1"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".Class2"
+            android:label="Class 2"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".Class3"
+            android:label="Class 3"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".Class4"
+            android:label="Class 4"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".GltfActivity"
+            android:label="AR View"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".shapes"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
+            android:label="Shapes"
+            android:screenOrientation="locked"
+        />
+        <activity android:name=".Alphabets"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
+            android:label="Alphabets"
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".Numbers"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
+            android:label="Numbers"
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".Money"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
+            android:label="Money"
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".Vehicles"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
+            android:label="Vehicles"
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".SolarSystem"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
+            android:label="Solar System"
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".Geometry"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
+            android:label="Geometry"
+            android:screenOrientation="locked"
+            />
+    </application>
+</manifest>

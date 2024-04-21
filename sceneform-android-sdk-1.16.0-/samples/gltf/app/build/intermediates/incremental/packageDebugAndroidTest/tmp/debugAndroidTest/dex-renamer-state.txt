@@ -1,0 +1,4 @@
+#Thu Apr 11 06:21:32 IST 2024
+base.0=/home/pushpender/Downloads/sceneform-android-sdk-1.16.0/sceneform-android-sdk-1.16.0-/samples/gltf/app/build/intermediates/transforms/dexMerger/androidTest/debug/0
+renamed.0=classes.dex
+path.0=classes.dex
